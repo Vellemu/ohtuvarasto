@@ -23,7 +23,7 @@ class TestVarasto(unittest.TestCase):
         self.varasto.lisaa_varastoon(12)
         
         #Varmistus, että saldo ei mene yli
-        self.assertAlmostEqual(self.varasto.saldo, 8)
+        self.assertAlmostEqual(self.varasto.saldo, 10)
 
     def test_lisays_lisaa_pienentaa_vapaata_tilaa(self):
         self.varasto.lisaa_varastoon(8)
